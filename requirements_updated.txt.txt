@@ -1,0 +1,4 @@
+pyTelegramBotAPI
+PyMuPDF==1.19.6
+Pillow
+schedule
