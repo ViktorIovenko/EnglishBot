@@ -10,7 +10,7 @@ from pytz import timezone
 from datetime import datetime
 
 # Токен вашего Telegram бота
-BOT_TOKEN = '5767428724:AAHVsTsrkqLnAoEMmWTMdLXA8fC_jRHkykE'
+BOT_TOKEN = 'you token'
 
 # Создаем объект бота
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -18,12 +18,12 @@ bot = telebot.TeleBot(BOT_TOKEN)
 # Словарь для хранения состояний пользователей
 user_states = {}
 
-GROUP_CHAT_ID = "-1001916885105"
+GROUP_CHAT_ID = "you group"
 last_comment = None  # Для хранения последнего комментария
 global homework_assigned
 homework_assigned = False
 
-log_chat_id = -1002044002900  # ID чата для логирования ошибок
+log_chat_id = you group  # ID чата для логирования ошибок
 
 # Устанавливаем временную зону Амстердама
 amsterdam_tz = timezone('Europe/Amsterdam')
@@ -46,7 +46,7 @@ def remind_teacher():
     global homework_assigned
     if not homework_assigned:
         chat_id = GROUP_CHAT_ID
-        message = "@RinaPolianskaya Пожалуйста, задайте домашнее задание!\n\nДомашнего задание нет или урок не состоялся, команда - /no"
+        message = "you teach Пожалуйста, задайте домашнее задание!\n\nДомашнего задание нет или урок не состоялся, команда - /no"
         bot.send_message(chat_id, message)
 
 def check_homework_assigned():
